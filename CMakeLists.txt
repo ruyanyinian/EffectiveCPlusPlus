@@ -1,18 +1,18 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
-PROJECT(Item2)
+PROJECT(Item4)
 SET(CMAKE_CXX_STANDARD 11)
 
 ADD_LIBRARY(
-    item2
+    item4
     SHARED
-    src/item2.cpp
+    src/item4.cpp
 )
 
 TARGET_INCLUDE_DIRECTORIES(
-    item2
+    item4
     PUBLIC
     ${PROJECT_SOURCE_DIR}/include
 )
 
 ADD_EXECUTABLE(main main.cpp)
-TARGET_LINK_LIBRARIES(main item2)
+TARGET_LINK_LIBRARIES(main item4)
