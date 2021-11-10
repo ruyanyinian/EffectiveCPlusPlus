@@ -6,7 +6,7 @@
 class A {
 public:
     A();
-    ~A();
+    virtual ~A(); //声明虚析构函数, 就可以达到用基类指针去析构派生类
 private:
     char *m_a = NULL;
 };
