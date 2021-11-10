@@ -1,9 +1,12 @@
-#include "item4.hpp"
+#include "item7.hpp"
 
+
+void deleteClass(A *base) {
+    delete base;
+}
 int main() {
-    // TextBook tb("hello");
-    // tb[0] = 'c'; 
-    // std::cout << tb[0] << std::endl;
-    // return 0;
+
+    C *myc = new C;
+    deleteClass(myc);
     return 0;
 }
